@@ -68,8 +68,8 @@ export default {
         const result = await this.$http.post('/login', this.loginForm)
         // console.log("=====",result)
         if (result.status === 200 && result.data.code == '1000') {
-          console.log('登陆成功!')
-          console.log('请求结果', result.data)
+          // console.log('登陆成功!')
+          // console.log('请求结果', result.data)
           this.$message.success('登陆成功')
           let token = result.data.data.token
           saveToken(token)

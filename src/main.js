@@ -12,6 +12,14 @@ import "../mock/mock"
 // axios.defaults.baseURL=''
 
 Vue.config.productionTip = false;
+//axios 拦截器
+axios.interceptors.request.use(config =>{
+  // console.log('打印一下request')
+  // console.log(config)
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  //config 必须要被返回
+  return config
+})
 Vue.prototype.$http = axios;//在vue的原型上挂在axios
 //所有vue组件都可以通过this 访问到$http
 
