@@ -5,6 +5,7 @@ import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import UserManagement from '../components/user/UserManagement.vue'
 import SystemSetting from '../components/sys/SystemSetting.vue'
+import Shop from '../components/shop/shop.vue'
 
 Vue.use(VueRouter)
 
@@ -39,12 +40,18 @@ const routes = [
         path: '/sys-setting',
         name: 'SysSetting',
         component: SystemSetting
+      },
+      {
+        path: '/shop',
+        name: 'shop',
+        component: Shop
       }
     ]
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 //挂在路由导航守卫
