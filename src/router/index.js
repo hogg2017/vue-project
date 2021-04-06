@@ -7,6 +7,9 @@ import UserManagement from '../components/user/UserManagement.vue'
 import SystemSetting from '../components/sys/SystemSetting.vue'
 import Shop from '../components/shop/shop.vue'
 import Plan from '../components/plan/plan.vue'
+import Router from '../components/router/router.vue'
+import Router1 from '../components/router/routerDetail1.vue'
+import Router2 from '../components/router/routerDetail2.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +54,25 @@ const routes = [
         path: '/plan',
         name: 'plan',
         component: Plan
+      },
+      {
+        path: '/router',
+        name: 'router',
+        component: Router
+      },
+      {
+        path: '/router1',
+        name: 'router1',
+        component: Router1
+      },
+      {
+        path: '/router2',
+        name: 'router2',
+        component: Router2
+      },
+      {
+        path: '/router1/:other',
+        component: Router1
       }
     ]
   }
