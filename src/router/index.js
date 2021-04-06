@@ -74,6 +74,7 @@ const routes = [
         path: '/router1/:other',
         component: Router1
       }
+      //change
     ]
   }
 ]

@@ -59,6 +59,19 @@ const menuList = [
       },
     ],
   },
+  {
+    id: 105,
+    authName: "路由管理",
+    path: "router-management",
+    children: [
+      {
+        id: 151,
+        authName: "路由",
+        path: "router",
+        children: [],
+      },
+    ],
+  },
 ];
 const userInfoList = [
   {
