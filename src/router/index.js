@@ -6,6 +6,7 @@ import Welcome from '../components/Welcome.vue'
 import UserManagement from '../components/user/UserManagement.vue'
 import SystemSetting from '../components/sys/SystemSetting.vue'
 import Shop from '../components/shop/shop.vue'
+import Plan from '../components/plan/plan.vue'
 
 Vue.use(VueRouter)
 
@@ -45,6 +46,11 @@ const routes = [
         path: '/shop',
         name: 'shop',
         component: Shop
+      },
+      {
+        path: '/plan',
+        name: 'plan',
+        component: Plan
       }
     ]
   }

@@ -46,6 +46,19 @@ const menuList = [
       },
     ],
   },
+  {
+    id: 104,
+    authName: "计划管理",
+    path: "plan-management",
+    children: [
+      {
+        id: 141,
+        authName: "计划",
+        path: "plan",
+        children: [],
+      },
+    ],
+  },
 ];
 const userInfoList = [
   {
